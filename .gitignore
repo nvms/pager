@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__
+cookies
+*.pyc
+dumps/*.html
+.idea
