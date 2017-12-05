@@ -7,7 +7,7 @@ import pager
 
 wiki = Pager('https://en.wikipedia.org/wiki/Main_Page')
 wiki.get('/')
-print(wiki.status_code.human, wiki.last_location
+print(wiki.status_code.human, wiki.last_location)
 # 200 OK https://en.wikipedia.org/wiki/Main_Page/
 
 page = Pager()
