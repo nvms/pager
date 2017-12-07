@@ -86,6 +86,12 @@ class Pager(object):
         else:
             return False
 
+    def has(self, match):
+        if self.content.find(match) >= 0:
+            return True
+        else:
+            return False
+
     def juice_all(self, regex, capture_groups={0}):
         r = re.compile(regex, re.DOTALL)
         matched = r.findall(self.content)  # matched is now a tuple
@@ -96,12 +102,6 @@ class Pager(object):
                 mdict[n] = m[n]
             match_list.append(mdict)
         return match_list
-
-    def has(self, match):
-        if self.content.find(match) >= 0:
-            return True
-        else:
-            return False
 
     def findall(self, pattern):
         return re.findall(pattern, self.content)

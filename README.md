@@ -17,7 +17,6 @@ print(page.status_code, page.last_location)
 
 page.post('http://www.bing.com')
 page.get('http://www.yahoo.com')
-# etc
 
 # sending POST data
 poster = Pager('http://www.somewebsite.com')
