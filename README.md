@@ -1,6 +1,6 @@
 # Pager
 
-Pager is a lightweight and rather obscure python wrapper around pycurl. It was designed to be used in some personal projects and is in no-way a fully-featured pycurl wrapper.
+Pager is a lightweight python wrapper around pycurl. It was designed to be used in some personal projects and is in no-way a fully-featured pycurl wrapper.
 
 ```python
 import pager
